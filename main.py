@@ -2,10 +2,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 class TestlinAutomaton:
-    def __init__(self, n):
-        self.n = n
-        self.state = random.choice([self.n, self.n + 1])
-
+        def __init__(self, n):
+        # if n is 3 is just random choise between 3 and 4 as an initial state for our object
+        self.state = random.choice([self.n, self.n + 1])  # define state as integer randomly chosen by they weakest repersatntion of yes or no
+ 
     def makeDecision(self):
         if self.state <= self.n:
             return "NO"
